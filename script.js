@@ -211,10 +211,11 @@
 // Recursive Function 
 
 // function getRecursive(nr){
-//     console.log(nr);
+   
 //     if(nr>0){
 //         getRecursive(--nr);
 //     }
+//     console.log(nr);
 // }
 // getRecursive(3);
 
@@ -229,3 +230,42 @@
 //     console.log("Ended function",nr);
 // }
 // logRecursive(3);
+
+//  performance of recursion is slightly worst than loop
+
+//  NESTED FUNCTION
+//  function doOuterFunctionStuff(nr){
+//     console,log("outerfunction");
+//     doInnerFunctionStuff(nr);
+//     function doInnerFunction(x){
+//         console.log(x+7);
+//         console.log("I can access outer variable:",nr);
+//     }
+//  }
+//  doOuterFunctionStuff(2);
+
+//  ANONYMOUS FUNCTIONS
+//  like passing in  function as parameter.
+//   FUNCTION CALLBACK
+
+//   let functionVariable=function(){
+//     console.log("Not so secret through.");
+//   };
+//   function doFlexibleStuff(executeStuff){
+//     executeStuff();
+//     console.log("InsidemdoFlexibleStuff");
+//   }
+//   doFlexibleStuff(functionVariable);
+
+// in javascript there are many builtin function like setTimeout()
+// let youGotThis=function(){
+//     console.log("You are really doing well ,keep coding!");
+// };
+// setTimeout(youGotThis,4000);
+
+// let youGotThis=function(){
+//     console.log("You are really doing well ,keep coding!");
+// };
+// setInterval(youGotThis,1000);
+
+
